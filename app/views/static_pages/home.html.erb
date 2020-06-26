@@ -1,0 +1,21 @@
+<div>
+  <div>
+    <h1>Welcome to the Rails Recipe Manager</h1>
+  </div>
+  <div>
+    <p">Please login if you have an account with us or signup here</p>
+    <br />
+    <div>
+      <%= link_to 'Login', login_path, :class => "btn text-white" %>
+    </div>
+    <div>
+      <%= link_to 'Sign Up', signup_path, :class => "btn text-white" %> 
+    </div>
+
+    <p>You can login using your Github account too</p>
+    <br />
+    <div>
+      <%= link_to 'Login with Github', '/auth/github', :class => "btn text-white" %> 
+    </div>
+  </div>
+</div> 
