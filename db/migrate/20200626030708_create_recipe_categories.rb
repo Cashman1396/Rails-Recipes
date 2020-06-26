@@ -4,7 +4,7 @@ class CreateRecipeCategories < ActiveRecord::Migration[6.0]
       t.integer :recipe_id
       t.integer :category_id
 
-      t.timestamps null: flase
+      t.timestamps null: false
     end
   end
 end
