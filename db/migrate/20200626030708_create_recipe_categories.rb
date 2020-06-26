@@ -1,12 +1,10 @@
 class CreateRecipeCategories < ActiveRecord::Migration[6.0]
   def change
     create_table :recipe_categories do |t|
-      t.string :name
-      t.string :email
-      t.string :password_digest
-      t.boolean :admin
+      t.integer :recipe_id
+      t.integer :category_id
 
-      t.timestamps null: false
+      t.timestamps null: flase
     end
   end
 end
